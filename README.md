@@ -12,7 +12,7 @@ class About extends Me
     {
         return [
             'company'    => 'Goyan Developers',
-            'position'   => 'Senior Engineer',
+            'position'   => 'Senior Engineer / Co-founder',
             'department' => 'Web application development',
         ];
     }
