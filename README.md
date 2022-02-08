@@ -1,16 +1,27 @@
-### Hi there 👋
+<?php
 
-<!--
-**NadsonKT/NadsonKT** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+namespace NadsonKT;
 
-Here are some ideas to get you started:
+class About extends Me
+{    
+    public function getWorkplace(): array
+    {
+        return [
+            'company'    => 'Goyan Developers',
+            'position'   => 'Senior Engineer',
+            'department' => 'Web application development',
+        ];
+    }
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+    public function getKnowledge(): array
+    {
+        return [
+            Php::class,
+            Laravel::class,
+            Javascript::class,
+            CodeIgniter::class,
+            MySQL::class,
+            React::class
+        ];
+    }
+}
